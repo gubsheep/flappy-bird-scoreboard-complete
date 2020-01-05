@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+<!-- everything that DOESNT appear on the page (icon, tab title, Messenger preview, etc etc) goes into head -->
+<head>
+    <title>scoreboard</title>
+    <meta charset="utf-8">
+    <script defer src="./index.js"></script>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        #board {
+            position: relative;
+            border-top: 10px solid green;
+            border-bottom: 10px solid green;
+            height: 400px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<!-- everything that appears on the page is in body -->
+<body>
+    <h1>🎉 Scores</h1>
+    <div id="board"></div>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBLt2YsNIH7YAPt3qhrvtulRJLl0jeMPMQ",
+        authDomain: "hack-lodge-demo.firebaseapp.com",
+        databaseURL: "https://hack-lodge-demo.firebaseio.com",
+        projectId: "hack-lodge-demo",
+        storageBucket: "hack-lodge-demo.appspot.com",
+        messagingSenderId: "569600175799",
+        appId: "1:569600175799:web:54ccb97e79a20ae9a9e732",
+        measurementId: "G-KRZY3NGTQG"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>
